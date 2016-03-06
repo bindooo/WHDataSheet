@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/createMovementText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Movement"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/movementSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/stat_values"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/createSkillPointText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Skill Point"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/skillPointSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/stat_values"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/createWeaponSkillText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Weapon Skill"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/weaponSkillSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/stat_values"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/createFatePointText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Fate Point"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/fatePointSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/stat_values"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/createBallisticSkillText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Ballistic Skill"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/ballisticSkillSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/stat_values"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/createArmorSaveText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Armor Save"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/armorSaveSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/armor_warp_values"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/createStrengthText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Strength"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/strengthSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/stat_values"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/createWarpSaveText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Warp Save"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/warpSaveSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/armor_warp_values"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/createToughnessText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Toughness"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/toughnessSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/stat_values"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/createMagicPointText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Magic Point"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/magicPointSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/magicPoint_values"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/createWoundsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Wounds"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/woundsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/stat_values"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/createInitiativeSkillText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Initiative"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/initiativeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/stat_values"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/createAttackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Attack"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/attackSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/stat_values"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/createLeadershipText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Leadership"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/leadershipSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:entries="@array/stat_values"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Save"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/loadMovementText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Movement"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadMovementValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/loadSkillPointText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Skill Point"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadSkillPointValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/loadWeaponSkillText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Weapon Skill"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadWeaponSkillValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/loadFatePointText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Fate Point"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadFatePointValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/loadBallisticSkillText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Ballistic Skill"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadBallisticSkillValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/loadArmorSaveText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Armor Save"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadArmorSaveValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/loadStrengthText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Strength"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadStrengthValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/loadWarpSaveText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Warp Save"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadWarpSaveValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/loadToughnessText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Toughness"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadToughnessValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/loadMagicPointText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Magic Point"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadMagicPointValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/loadWoundsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Wounds"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadWoundsValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/loadInitiativeSkillText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Initiative"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadInitiativeSkillValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/loadAttackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Attack"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadAttackValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/loadLeadershipText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="Leadership"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/loadLeadershipValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
