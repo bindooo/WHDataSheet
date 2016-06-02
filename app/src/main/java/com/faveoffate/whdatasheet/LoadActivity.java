@@ -1,5 +1,6 @@
 package com.faveoffate.whdatasheet;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -13,16 +14,24 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class Load extends AppCompatActivity {
-    String[] stats = new String[14];
-    String skills, inventory;
-    boolean afterSkills, afterInventory;
+public class LoadActivity extends AppCompatActivity {
+
+    protected String[] stats = new String[15];
+    protected String skills, inventory;
+    private String filename;
+    private boolean afterSkills, afterInventory;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.load_fragments);
 
+        Intent intent = getIntent();
+        filename = intent.getStringExtra("FILE_NAME");
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.load_toolbar);
+
         setSupportActionBar(toolbar);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.load_tab_layout);
@@ -34,36 +43,42 @@ public class Load extends AppCompatActivity {
         final ViewPager viewPager = (ViewPager) findViewById(R.id.load_pager);
         final LoadFragmentPageAdapter adapter = new LoadFragmentPageAdapter
                 (getSupportFragmentManager(), tabLayout.getTabCount());
+
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
             }
+
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
             }
+
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
             }
         });
         load();
-        sendToFragments();
+        logData();
     }
-    public void load() {
+
+    private void load() {
+
         int i = 0;
         try {
-            InputStream inputStream = openFileInput("char1.txt");
+            InputStream inputStream = openFileInput(filename);
 
-            if ( inputStream != null ) {
+            if (inputStream != null) {
                 InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
                 BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
                 String receiveString = "";
                 StringBuilder skillsBuilder = new StringBuilder();
                 StringBuilder inventoryBuilder = new StringBuilder();
 
-                while ( (receiveString = bufferedReader.readLine()) != null ) {
+                while ((receiveString = bufferedReader.readLine()) != null) {
                     if (receiveString.equals("skills")) {
                         afterSkills = true;
                         continue;
@@ -89,16 +104,17 @@ public class Load extends AppCompatActivity {
                 skills = skillsBuilder.toString();
                 inventory = inventoryBuilder.toString();
             }
-        }
-        catch (FileNotFoundException e) {
-            Log.e("Load activity ", "File not found: " + e.toString());
+        } catch (FileNotFoundException e) {
+            Log.e("LoadActivity: ", "File not found: " + e.toString());
         } catch (IOException e) {
-            Log.e("Load activity ", "Can not read file: " + e.toString());
+            Log.e("LoadActivity: ", "Can not read file: " + e.toString());
         }
     }
-    public void sendToFragments() {
-        for(int i = 0; i < stats.length; i++)
-            Log.d("Stats: ", stats[i]);
+
+    private void logData() {
+
+        for (String stat : stats)
+            Log.d("Stats: ", stat);
         Log.d("Skills: ", skills);
         Log.d("Inventory: ", inventory);
     }

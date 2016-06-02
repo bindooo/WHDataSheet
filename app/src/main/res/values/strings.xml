@@ -1,6 +1,33 @@
 <resources>
-    <string name="app_name">WHDataSheet</string>
 
+    <!-- Buttons -->
+    <string name="CreateNew">Create New</string>
+    <string name="Load">Load</string>
+
+    <!-- Stats -->
+    <string name="app_name">WHDataSheet</string>
+    <string name="Movement">Movement</string>
+    <string name="SkillPoint">Skill Point</string>
+    <string name="WeaponSkill">Weapon Skill</string>
+    <string name="FatePoint">Fate Point</string>
+    <string name="BallisticSkill">Ballistic Skill</string>
+    <string name="ArmorSave">Armor Save</string>
+    <string name="Strength">Strength</string>
+    <string name="WarpSave">Warp Save</string>
+    <string name="Toughness">Toughness</string>
+    <string name="MagicPoint">Magic Point</string>
+    <string name="Wounds">Wounds</string>
+    <string name="Initiative">Initiative</string>
+    <string name="Attack">Attack</string>
+    <string name="Name">Name</string>
+    <string name="Leadership">Leadership</string>
+    <string name="Save">Save</string>
+
+    <!-- Hints -->
+    <string name="inventoryHint">Enter inventory items here</string>
+    <string name="skillsHint">Enter skills here</string>
+
+    <!-- Stat values -->
     <string-array name="stat_values">
         <item>0</item>
         <item>1</item>
@@ -14,6 +41,8 @@
         <item>9</item>
         <item>10</item>
     </string-array>
+
+    <!-- Magic Point values -->
     <string-array name="magicPoint_values">
         <item>0</item>
         <item>1</item>
@@ -37,6 +66,8 @@
         <item>19</item>
         <item>20</item>
     </string-array>
+
+    <!-- Armor & Warp Save values -->
     <string-array name="armor_warp_values">
         <item>None</item>
         <item>1+</item>

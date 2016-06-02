@@ -5,12 +5,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class LoadFragmentPageAdapter extends FragmentPagerAdapter {
-    int mNumOfTabs;
+
+    private int mNumOfTabs;
 
     public LoadFragmentPageAdapter(FragmentManager fm, int NumOfTabs) {
         super(fm);
         this.mNumOfTabs = NumOfTabs;
     }
+
     @Override
     public Fragment getItem(int position) {
 
@@ -28,6 +30,7 @@ public class LoadFragmentPageAdapter extends FragmentPagerAdapter {
                 return null;
         }
     }
+
     @Override
     public int getCount() {
         return mNumOfTabs;

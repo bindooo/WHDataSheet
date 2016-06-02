@@ -19,12 +19,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.faveoffate.whdatasheet.Create"
+            android:name=".CreateActivity"
+            android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.faveoffate.whdatasheet.Load"
+            android:name=".LoadActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".LoadCharacterListActivity"
             android:screenOrientation="portrait"
             android:label="@string/app_name" >
         </activity>

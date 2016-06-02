@@ -6,33 +6,39 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 public class CreateStatsFragment extends Fragment {
-    String[] stats = new String[14];
-    Spinner movementSpinner, weaponSkillSpinner, ballisticSkillSpinner,
+
+    private String[] stats = new String[15];
+    private Spinner movementSpinner, weaponSkillSpinner, ballisticSkillSpinner,
             strengthSpinner, toughnessSpinner, woundsSpinner, initiativeSpinner,
             attackSpinner, leadershipSpinner, skillPointSpinner, fatePointSpinner,
             armorSaveSpinner, warpSaveSpinner, magicPointSpinner;
+    private EditText nameText;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.create_stats, container, false);
     }
+
     public void onViewCreated(View v, Bundle savedInstanceState) {
-        movementSpinner=(Spinner) v.findViewById(R.id.movementSpinner);
-        weaponSkillSpinner=(Spinner) v.findViewById(R.id.weaponSkillSpinner);
-        ballisticSkillSpinner=(Spinner) v.findViewById(R.id.ballisticSkillSpinner);
-        strengthSpinner=(Spinner) v.findViewById(R.id.strengthSpinner);
-        toughnessSpinner=(Spinner) v.findViewById(R.id.toughnessSpinner);
-        woundsSpinner=(Spinner) v.findViewById(R.id.woundsSpinner);
-        initiativeSpinner=(Spinner) v.findViewById(R.id.initiativeSpinner);
-        attackSpinner=(Spinner) v.findViewById(R.id.attackSpinner);
-        leadershipSpinner=(Spinner) v.findViewById(R.id.leadershipSpinner);
-        skillPointSpinner=(Spinner) v.findViewById((R.id.skillPointSpinner));
-        fatePointSpinner=(Spinner) v.findViewById((R.id.fatePointSpinner));
-        armorSaveSpinner=(Spinner) v.findViewById((R.id.armorSaveSpinner));
-        warpSaveSpinner=(Spinner) v.findViewById((R.id.warpSaveSpinner));
-        magicPointSpinner=(Spinner) v.findViewById((R.id.magicPointSpinner));
+        movementSpinner = (Spinner) v.findViewById(R.id.movementSpinner);
+        weaponSkillSpinner = (Spinner) v.findViewById(R.id.weaponSkillSpinner);
+        ballisticSkillSpinner = (Spinner) v.findViewById(R.id.ballisticSkillSpinner);
+        strengthSpinner = (Spinner) v.findViewById(R.id.strengthSpinner);
+        toughnessSpinner = (Spinner) v.findViewById(R.id.toughnessSpinner);
+        woundsSpinner = (Spinner) v.findViewById(R.id.woundsSpinner);
+        initiativeSpinner = (Spinner) v.findViewById(R.id.initiativeSpinner);
+        attackSpinner = (Spinner) v.findViewById(R.id.attackSpinner);
+        leadershipSpinner = (Spinner) v.findViewById(R.id.leadershipSpinner);
+        skillPointSpinner = (Spinner) v.findViewById((R.id.skillPointSpinner));
+        fatePointSpinner = (Spinner) v.findViewById((R.id.fatePointSpinner));
+        armorSaveSpinner = (Spinner) v.findViewById((R.id.armorSaveSpinner));
+        warpSaveSpinner = (Spinner) v.findViewById((R.id.warpSaveSpinner));
+        magicPointSpinner = (Spinner) v.findViewById((R.id.magicPointSpinner));
+        nameText = (EditText) v.findViewById(R.id.nameText);
         Button btn = (Button) v.findViewById(R.id.saveButton);
         btn.setOnClickListener(new View.OnClickListener() {
 
@@ -51,7 +57,8 @@ public class CreateStatsFragment extends Fragment {
                 stats[11] = armorSaveSpinner.getSelectedItem().toString();
                 stats[12] = warpSaveSpinner.getSelectedItem().toString();
                 stats[13] = magicPointSpinner.getSelectedItem().toString();
-                ((Create)getActivity()).save(stats);
+                stats[14] = nameText.getText().toString();
+                ((CreateActivity) getActivity()).save(stats);
             }
         });
     }

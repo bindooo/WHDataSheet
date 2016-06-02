@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Movement"
+            android:text="@string/Movement"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/movementSpinner"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Skill Point"
+            android:text="@string/SkillPoint"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/skillPointSpinner"
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Weapon Skill"
+            android:text="@string/WeaponSkill"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/weaponSkillSpinner"
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Fate Point"
+            android:text="@string/FatePoint"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/fatePointSpinner"
@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Ballistic Skill"
+            android:text="@string/BallisticSkill"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/ballisticSkillSpinner"
@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Armor Save"
+            android:text="@string/ArmorSave"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/armorSaveSpinner"
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Strength"
+            android:text="@string/Strength"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/strengthSpinner"
@@ -152,7 +152,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Warp Save"
+            android:text="@string/WarpSave"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/warpSaveSpinner"
@@ -176,7 +176,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Toughness"
+            android:text="@string/Toughness"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/toughnessSpinner"
@@ -192,7 +192,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Magic Point"
+            android:text="@string/MagicPoint"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/magicPointSpinner"
@@ -216,7 +216,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Wounds"
+            android:text="@string/Wounds"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/woundsSpinner"
@@ -248,7 +248,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Initiative"
+            android:text="@string/Initiative"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/initiativeSpinner"
@@ -280,7 +280,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Attack"
+            android:text="@string/Attack"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/attackSpinner"
@@ -290,13 +290,14 @@
             android:entries="@array/stat_values"
             android:layout_weight="1" />
 
-        <TextView android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/createNameText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <TextView android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:gravity="center"
+            android:padding="20px"
+            android:text="@string/Name"
+            android:layout_weight="0.66" />
 
     </LinearLayout>
 
@@ -312,7 +313,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="20px"
-            android:text="Leadership"
+            android:text="@string/Leadership"
             android:layout_weight="1" />
         <Spinner
             android:id="@+id/leadershipSpinner"
@@ -322,13 +323,13 @@
             android:entries="@array/stat_values"
             android:layout_weight="1" />
 
-        <TextView android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <TextView android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:padding="20px"
+            android:hint="Enter name here"
+            android:layout_weight="0.66" />
 
     </LinearLayout>
 
@@ -338,7 +339,7 @@
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Save"
+        android:text="@string/Save"
         android:layout_weight="1" />
 
 </LinearLayout>

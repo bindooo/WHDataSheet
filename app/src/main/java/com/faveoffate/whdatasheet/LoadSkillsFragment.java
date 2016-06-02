@@ -9,16 +9,16 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class LoadSkillsFragment extends Fragment {
-    public Context context;
-    TextView skillsText;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.load_skills, container, false);
     }
-    public void onViewCreated(View v, Bundle savedInstanceState) {
-        context = getActivity();
-        skillsText = (TextView) v.findViewById(R.id.skillsText);
 
-        skillsText.setText(((Load)context).skills);
+    public void onViewCreated(View v, Bundle savedInstanceState) {
+        Context context = getActivity();
+        TextView skillsText = (TextView) v.findViewById(R.id.skillsText);
+
+        skillsText.setText(((LoadActivity) context).skills);
     }
 }

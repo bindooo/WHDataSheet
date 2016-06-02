@@ -11,7 +11,7 @@
             android:id="@+id/skillsEdit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Enter skills here" />
+            android:hint="@string/skillsHint" />
     </ScrollView>
 
 </LinearLayout>

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:text="Create New" />
+        android:text="@string/CreateNew" />
 
     <Button
         android:id="@+id/loadButton"
@@ -18,6 +18,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/createNewButton"
         android:layout_centerHorizontal="true"
-        android:text="Load" />
+        android:text="@string/Load" />
 
 </RelativeLayout>

@@ -9,16 +9,16 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class LoadInventoryFragment extends Fragment {
-    public Context context;
-    TextView inventoryText;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.load_inventory, container, false);
     }
-    public void onViewCreated(View v, Bundle savedInstanceState) {
-        context = getActivity();
-        inventoryText = (TextView) v.findViewById(R.id.inventoryText);
 
-        inventoryText.setText(((Load)context).inventory);
+    public void onViewCreated(View v, Bundle savedInstanceState) {
+        Context context = getActivity();
+        TextView inventoryText = (TextView) v.findViewById(R.id.inventoryText);
+
+        inventoryText.setText(((LoadActivity) context).inventory);
     }
 }
